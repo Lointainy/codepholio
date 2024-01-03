@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 
-import { sendEmail } from '@/actions/sendEmail';
+import { SendEmailResponseErrorType, sendEmail } from '@/actions/sendEmail';
 
 import { SendButton } from '@/components/standarts';
 import SectionContainer from './SectionContainer';
@@ -32,14 +32,23 @@ const fadeInAnimationVar = {
 
 function Contact({ intl }: ContactProps) {
 	const submitForm = async (formData: FormData) => {
-		const { error } = await sendEmail(formData);
+		const result = await sendEmail(formData);
 
-		if (error) {
-			toast.error(error);
+		if (result === undefined) {
+			console.error('sendEmail returned undefined');
 			return;
 		}
 
-		toast.success('Email send successfully');
+		if ('error' in result) {
+			const { error } = result as SendEmailResponseErrorType;
+
+			if (error) {
+				toast.error(error);
+				return;
+			}
+		}
+
+		toast.success('Email sent successfully');
 	};
 
 	return (
@@ -106,5 +115,4 @@ function Contact({ intl }: ContactProps) {
 }
 
 export default Contact;
-
 

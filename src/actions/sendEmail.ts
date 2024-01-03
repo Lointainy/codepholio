@@ -20,53 +20,59 @@ const validateString = (value: unknown, maxLengh: number) => {
 }
 
 
-export const sendEmail = async (formData: FormData) => {
+export type SendEmailResponseSuccessType = {
+    data: any; // Define the actual type of the 'data' property
+}
+
+export type SendEmailResponseErrorType = {
+    error: string;
+}
+
+// Updated return type to exclude undefined
+export const sendEmail = async (formData: FormData): Promise<SendEmailResponseSuccessType | SendEmailResponseErrorType | undefined> => {
     const msg = formData.get('senderMessage');
     const email = {
         sender: formData.get('senderEmail'),
-        recipient: recipientEmail
-    }
+        recipient: recipientEmail,
+    };
 
     if (!validateString(email.sender, 500) || !validateString(email.recipient, 500)) {
         return {
-            error: 'invalid email'
-        }
+            error: 'invalid email',
+        };
     }
 
     if (!validateString(msg, 5000) || !msg) {
         return {
-            error: "Invalide message"
-        }
+            error: 'Invalid message',
+        };
     }
 
     try {
         const req = await resend.emails.send({
-            from: "Contact Form <onboarding@resend.dev>",
+            from: 'Contact Form <onboarding@resend.dev>',
             to: email.recipient as string,
-            subject: "Message from contact form",
+            subject: 'Message from contact form',
             reply_to: email.sender as string,
             react: React.createElement(ContactFormEmail, {
                 msg: msg as string,
-                senderEmail: email.sender as string
+                senderEmail: email.sender as string,
             }),
         });
 
         if (req.error) {
             return {
-                error: req.error.message
-            }
+                error: req.error.message,
+            };
         }
 
         return {
-            data: req.data
-        }
-
-    } catch (error: unknown) {
-        if (error instanceof Error) {
-            return {
-                error: error.message
-            };
-        }
+            data: req.data,
+        };
+    } catch (error) {
+        return {
+            error: (error as Error).message,
+        };
     }
 };
 
