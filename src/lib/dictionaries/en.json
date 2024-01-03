@@ -1,0 +1,163 @@
+{
+	"navigation": {
+		"home": "Home",
+		"about": "About",
+		"projects": "Projects",
+		"skills": "Skills",
+		"experience": "experience",
+		"contact": "contact",
+		"blog": "blog"
+	},
+	"page": {
+		"hero": {
+			"title": "Hello, <span class=\"font-bold\">I'm Eugene.</span> I'm <span class=\"font-bold\">Fullstack</span> developer.  I enjot building <span class=\"italic\">sites & apps</span>. My focus is <span class=\"underline\">React (Next.js)</span>.",
+			"buttons": {
+				"contact": "Contact me here",
+				"download": "Download"
+			}
+		},
+		"about": {
+			"title": "About me",
+			"description": "After graduating from university, I started working in brand design. <span class=\"font-bold\">For seven years </span> I designed <span class=\"italic\">logos</span> and <span class=\"italic\">corporate identity</span> for brands.<br />But I was always drawn to my high school passion for programming, so I decided to continue my studies in this area. I loaded up on books and video lectures and applied for this degree. My favorite part of programming is the problem-solving aspect. I love the feeling when I finally find a solution to a problem. My main stack is <span class=\"underline\">React,</span> <span class=\"underline\">Next.js,</span> <span class=\"underline\">Node.js</span> and <span class=\"underline\">MongoDB</span>. I am also familiar with </span>на <span class=\"underline\">TypeScript,</span> <span class=\"underline\">Vue,</span> <span class=\"underline\">PHP</span> та <span class=\"underline\">Wordpress.</span>  I am always eager to learn new technologies. <br />I'm currently looking for a  <span class=\"font-bold\">fullstack</span> developer position full-time. I like to play video games and watch movies. I also like to learn new things. I am also learning to play the <span class=\"italic\">ukulele.</span>"
+		},
+		"projects": {
+			"title": "Projects",
+			"list": [
+				{
+					"title": "Audio Ecommerce",
+					"description": "multi-page e-commerce website",
+					"tags": ["React", "Typescript", "Node.js", "MongoDB"],
+					"imageUrl": "/images/audio-ec.jpg",
+					"links": [
+						{ "title": "website", "icon": "", "url": "https://audiophile-ecommerce-react-lointainy.netlify.app/" },
+						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/audiophile-ecommerce" }
+					]
+				},
+				{
+					"title": "Kanban App",
+					"description": "task management app, wit auth, server API CRUD",
+					"tags": ["React", "Typescript", "Node.js", "MongoDB", "authJWT", "Swagger"],
+					"imageUrl": "/images/kanban-app.jpg",
+					"links": [
+						{ "title": "website", "icon": "", "url": "https://audiophile-ecommerce-react-lointainy.netlify.app" },
+						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/kanban-app" }
+					]
+				},
+				{
+					"title": "Countries App",
+					"description": "REST Countries API to pull country data",
+					"tags": ["React"],
+					"imageUrl": "/images/rest-countries.jpg",
+					"links": [
+						{ "title": "website", "icon": "", "url": "https://rest-countries-api-react-lointainy.netlify.app" },
+						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/rest-countries-api-react" }
+					]
+				}
+			],
+			"buttons": {
+				"loadMore": "load more"
+			}
+		},
+		"skills": {
+			"title": "Skills"
+		},
+		"experience": {
+			"title": "Experience",
+			"list": [
+				{
+					"title": "Full Stack Developer",
+					"name": "Freelance",
+					"location": "Ukraine, Kriviy Rih",
+					"locationType": "Remote",
+					"employmentType": "Full-time",
+					"description": "Development websites on React / Next.js",
+					"skills": ["Typescript", "React", "Next.js", "Node.js", "Bootstrap", "Tailwind"],
+					"icon": "react",
+					"date": "Sep 2023 - Present"
+				},
+				{
+					"title": "Frontend Developer",
+					"name": "Web Forza",
+					"location": "Ukraine, Kriviy Rih",
+					"locationType": "On-site",
+					"employmentType": "Full-time",
+					"description": "Development websites on CMS Wordpress.",
+					"skills": ["PHP", "Wordpress", "Elementor", "Jquery"],
+					"icon": "wordpress",
+					"date": "Jul 2023 - Sep 2023"
+				},
+				{
+					"title": "Brand Designer | Logo Designer | Print designer",
+					"name": "Freelance",
+					"location": "Ukraine, Kriviy Rih",
+					"locationType": "Remote",
+					"employmentType": "Full-time",
+					"description": "Create branding identity, logos, print.",
+					"skills": ["Figma", "Illustrator", "Photoshop"],
+					"icon": "draw",
+					"date": "Jan 2017 - Jun 2023"
+				},
+				{
+					"title": "HTML Developer | Web Designer",
+					"name": "",
+					"location": "Ukraine, Kriviy Rih",
+					"locationType": "Remote",
+					"employmentType": "Part-time",
+					"description": "Create design for website. Development website.",
+					"skills": ["HTML", "CSS", "SASS", "Jquery", "Bootstrap", "Photoshop"],
+					"icon": "html",
+					"date": "May 2016 - Nov 2017"
+				},
+				{
+					"title": "Setup SIP telephony",
+					"name": "",
+					"location": "Ukraine, Kriviy Rih",
+					"locationType": "Hybrid",
+					"employmentType": "Part-time",
+					"description": "Extension and administration.",
+					"skills": ["Linux", "bash"],
+					"icon": "sip",
+					"date": "Sep 2015 - Feb 2016"
+				},
+				{
+					"title": "Web studio administrator",
+					"name": "",
+					"location": "Ukraine, Kriviy Rih",
+					"locationType": "Hybrid",
+					"employmentType": "Full-time",
+					"description": "Adjustment of the teams work process, personnel search.",
+					"skills": ["Communication"],
+					"icon": "admin",
+					"date": "Sep 2014 - Jan 2015"
+				},
+				{
+					"title": "Courier | Print Products",
+					"name": "Park",
+					"location": "Ukraine, Kriviy Rih",
+					"locationType": "On-site",
+					"employmentType": "Full-time",
+					"description": "Logistics around the city of various printing services.",
+					"skills": ["Communication"],
+					"icon": "track",
+					"date": "Jun 2013 - Sep 2023"
+				}
+			]
+		},
+		"contact": {
+			"title": "Contact",
+			"subtitle": "Please contact me directly at <a href=\"mailto:lointainyyy@gmail.com\" class=\"underline\"> email </a> or trough the form",
+			"placeholder": {
+				"email": "Your email",
+				"message": "Your message"
+			},
+			"buttons": {
+				"send": "Send"
+			}
+		}
+	},
+	"footer": {
+		"copy": "Eug1.DEV. All rights reserved.",
+		"build": "<span className=\"font-semibold\">Built with:</span> Next.js, Tailwind"
+	}
+}
+

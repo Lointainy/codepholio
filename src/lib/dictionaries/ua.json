@@ -1,0 +1,163 @@
+{
+	"navigation": {
+		"home": "Дім",
+		"about": "Про мене",
+		"projects": "Проекти",
+		"skills": "Навички",
+		"experience": "Досвід",
+		"contact": "Зв'язок",
+		"blog": "Блог"
+	},
+	"page": {
+		"hero": {
+			"title": "Привіт, <span class=\"font-bold\">мене звати Євген.</span> Я <span class=\"font-bold\">Fullstack </span>розробник. Розробляю <span class=\"italic\">сайти та додатки </span>на <span class=\"underline\">React (Next.js)</span>.",
+			"buttons": {
+				"contact": "Звязатися зі мною",
+				"download": "Завантажити"
+			}
+		},
+		"about": {
+			"title": "Про мене",
+			"description": "Закінчивши навчання в університеті, я почав займатися бренд дизайном. <span class=\"font-bold\">Сім років </span> розробляв <span class=\"italic\">логотипи</span> і <span class=\"italic\">фірмовий стиль</span> брендів.<br />Aле мене завжди тягнуло до шкільної пристрасті до программування, тому я вирішив продовжити навчання за цим напрямком. Я обклався книжками і відео лекціями та подалав цю ступень. Моя улюблена частина програмування - це аспект вирішення проблем. Мені подобається відчуття, коли я нарешті знаходжу рішення проблеми. Мій основний стек - це <span class=\"underline\">React,</span> <span class=\"underline\">Next.js,</span> <span class=\"underline\">Node.js</span> та <span class=\"underline\">MongoDB</span>. Я також знайомий з </span>на <span class=\"underline\">TypeScript,</span> <span class=\"underline\">Vue,</span> <span class=\"underline\">PHP</span> та <span class=\"underline\">Wordpress.</span> Я завжди прагну вивчати нові технології.<br />Наразі я шукаю посаду <span class=\"font-bold\">fullstack</span> розробника  на повний робочий день. Коли я не кодую, мені подобається грати у відеоігри, дивитися фільми. Мені також подобається вивчати нові речі. Я також вчуся грати на <span class=\"italic\">укулеле.</span>"
+		},
+		"projects": {
+			"title": "Проекти",
+			"list": [
+				{
+					"title": "Онлайн магазин Аудіо техніки",
+					"description": "багатосторінковий веб-сайт електронної комерції",
+					"tags": ["React", "Typescript", "Node.js", "MongoDB"],
+					"imageUrl": "/images/audio-ec.jpg",
+					"links": [
+						{ "title": "веб-сайт", "icon": "", "url": "https://audiophile-ecommerce-react-lointainy.netlify.app/" },
+						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/audiophile-ecommerce" }
+					]
+				},
+				{
+					"title": "Канбан веб застосунок",
+					"description": "менеджер задач, авторизація, сервер API CRUD",
+					"tags": ["React", "Typescript", "Node.js", "MongoDB", "authJWT", "Swagger"],
+					"imageUrl": "/images/kanban-app.jpg",
+					"links": [
+						{ "title": "веб-сайт", "icon": "", "url": "https://kanban-app-react-lointainy.netlify.app/" },
+						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/kanban-app" }
+					]
+				},
+				{
+					"title": "Застосунок Країни",
+					"description": "REST дані про країни",
+					"tags": ["React"],
+					"imageUrl": "/images/kanban-app.jpg",
+					"links": [
+						{ "title": "website", "icon": "", "url": "https://rest-countries-api-react-lointainy.netlify.app" },
+						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/rest-countries-api-react" }
+					]
+				}
+			],
+			"buttons": {
+				"loadMore": "Завантажити ще"
+			}
+		},
+		"skills": {
+			"title": "Навички"
+		},
+		"experience": {
+			"title": "Досвід",
+			"list": [
+				{
+					"title": "Full Stack Розробник",
+					"name": "Фріланс",
+					"location": "Україна, Кривий Ріг",
+					"locationType": "Віддалено",
+					"employmentType": "Повний день",
+					"description": "Розробка сайтів на React / Next.js",
+					"skills": ["Typescript", "React", "Next.js", "Node.js", "Bootstrap", "Tailwind"],
+					"icon": "react",
+					"date": "Вересень 2023 - Зараз"
+				},
+				{
+					"title": "Frontend розробник",
+					"name": "Web Forza",
+					"location": "Україна, Кривий Ріг",
+					"locationType": "На місці",
+					"employmentType": "Повний день",
+					"description": "Розробка сайтів на CMS Wordpress.",
+					"skills": ["PHP", "Wordpress", "Elementor", "Jquery"],
+					"icon": "wordpress",
+					"date": "Липень 2023 - Вересень 2023"
+				},
+				{
+					"title": "Бренд дизайнер | Лого дизайнер ",
+					"name": "Фріланс",
+					"location": "Україна, Кривий Ріг",
+					"locationType": "Віддалено",
+					"employmentType": "Повний день",
+					"description": "Створення фірмового стиля, лого, поліграфічний дизайн.",
+					"skills": ["Figma", "Illustrator", "Photoshop"],
+					"icon": "draw",
+					"date": "Січень 2017 - Червень 2023"
+				},
+				{
+					"title": "HTML розробник | Веб дизайнер",
+					"name": "",
+					"location": "Україна, Кривий Ріг",
+					"locationType": "Віддалено",
+					"employmentType": "Не повний день",
+					"description": "Створення дизайну сайтів. Розробки сайтів.",
+					"skills": ["HTML", "CSS", "SASS", "Jquery", "Bootstrap", "Photoshop"],
+					"icon": "html",
+					"date": "Травень 2016 - Листопад 2017"
+				},
+				{
+					"title": "Налаштування SIP телефонії",
+					"name": "",
+					"location": "Україна, Кривий Ріг",
+					"locationType": "",
+					"employmentType": "Гібридний",
+					"description": "Налаштування і адміністрація.",
+					"skills": ["Linux", "bash"],
+					"icon": "sip",
+					"date": "Вересень 2015 - Лютий 2016"
+				},
+				{
+					"title": "Адміністратор веб студії",
+					"name": "",
+					"location": "Україна, Кривий Ріг",
+					"locationType": "Гібридний",
+					"employmentType": "Повний день",
+					"description": "Налагодження процесу роботи команд, пошук персоналу.",
+					"skills": ["Спілкування"],
+					"icon": "admin",
+					"date": "Вересень 2014 - Січень 2015"
+				},
+				{
+					"title": "Курєєр печатної продукції",
+					"name": "Park",
+					"location": "Україна, Кривий Ріг",
+					"locationType": "На місці",
+					"employmentType": "Повний день",
+					"description": "Логістика по місту різних поліграфічних послуг.",
+					"skills": ["Спілкування"],
+					"icon": "track",
+					"date": "Червень 2013 - Вересень 2023"
+				}
+			]
+		},
+		"contact": {
+			"title": "Зв'язок",
+			"subtitle": "Будь ласка, зв'яжіться зі мною безпосередньо <a href=\"mailto:lointainyyy@gmail.com\" class=\"underline\">електронною поштою</a> або через форму",
+			"placeholder": {
+				"email": "Ваша пошта",
+				"message": "Ваше повідомлення"
+			},
+			"buttons": {
+				"send": "Відправити"
+			}
+		}
+	},
+	"footer": {
+		"copy": "Eug1.DEV. Всі права захищені.",
+		"build": "<span className=\"font-semibold\">Побудованно з:</span> Next.js, Tailwind"
+	}
+}
+
