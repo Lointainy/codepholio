@@ -61,8 +61,12 @@ export const sendEmail = async (formData: FormData) => {
             data: req.data
         }
 
-    } catch (error) {
-        return error.message
+    } catch (error: unknown) {
+        if (error instanceof Error) {
+            return {
+                error: error.message
+            };
+        }
     }
 };
 
