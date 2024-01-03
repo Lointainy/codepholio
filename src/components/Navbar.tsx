@@ -42,9 +42,15 @@ function Navbar({ navigation }: NavbarProps) {
 							animate={{ y: 0, opacity: 1 }}
 						>
 							<Link
-								className={clsx('flex w-full items-center justify-center px-3 py-2 hover:text-gray-950 dark:hover:text-white transition ', {
-									'text-white hover:text-gray-300 hover:dark:text-gray-100': activeSection === link.name
-								})}
+								className={clsx(
+									'flex w-full items-center justify-center px-3 py-2 dark:hover:text-white transition ',
+									{
+										'text-white hover:text-gray-300 hover:dark:text-gray-100': activeSection === link.name
+									},
+									{
+										'hover:text-gray-950': activeSection !== link.name
+									}
+								)}
 								href={link.hash}
 								onClick={() => handleLinkClick(link.name)}
 							>
