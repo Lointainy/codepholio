@@ -1,8 +1,13 @@
 import React from 'react';
 
 import { getDictionary } from '@/lib/dictionary';
+import { Locale } from '@/i18n.config';
 
-async function Footer({ lang }) {
+type FooterProps = {
+	lang: Locale;
+};
+
+async function Footer({ lang }: FooterProps) {
 	const currentYear = new Date().getFullYear();
 	const { footer } = await getDictionary(lang);
 
