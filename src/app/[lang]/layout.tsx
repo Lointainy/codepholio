@@ -15,6 +15,7 @@ import FloatNavigation from '@/components/FloatNavigation';
 import LangSwitch from '@/components/LangSwitch';
 import ThemeSwitch from '@/components/ThemeSwitch';
 import { Footer } from '@/layout';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,6 +45,7 @@ export default function RootLayout({ children, params }: { children: React.React
 						<FloatNavigation>
 							<LangSwitch lang={params.lang} />
 							<ThemeSwitch />
+							<ScrollToTop />
 						</FloatNavigation>
 					</ActiveSectionContextProvider>
 				</ThemeContextProvider>
