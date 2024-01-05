@@ -14,7 +14,7 @@ type SectionContainerProps = {
 
 function SectionContainer({ children, id, fullSize }: SectionContainerProps) {
 	const { ref, inView } = useInView({
-		threshold: 0.25
+		threshold: 0.2
 	});
 	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
