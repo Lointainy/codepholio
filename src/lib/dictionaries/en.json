@@ -10,7 +10,7 @@
 	},
 	"page": {
 		"hero": {
-			"title": "Hello, <span class=\"font-bold\">I'm Eugene.</span> I'm <span class=\"font-bold\">Fullstack</span> developer.  I enjot building <span class=\"italic\">sites & apps</span>. My focus is <span class=\"underline\">React (Next.js)</span>.",
+			"title": "Hello, <span class=\"font-bold\">I'm Eugene.</span> I'm <span class=\"font-bold\">Fullstack</span> developer.  I enjoy building <span class=\"italic\">sites & apps</span>. My focus is <span class=\"underline\">React (Next.js)</span>.",
 			"buttons": {
 				"contact": "Contact me here",
 				"download": "Download"
@@ -18,7 +18,7 @@
 		},
 		"about": {
 			"title": "About me",
-			"description": "After graduating from university, I started working in brand design. <span class=\"font-bold\">For seven years </span> I designed <span class=\"italic\">logos</span> and <span class=\"italic\">corporate identity</span> for brands.<br />But I was always drawn to my high school passion for programming, so I decided to continue my studies in this area. I loaded up on books and video lectures and applied for this degree. My favorite part of programming is the problem-solving aspect. I love the feeling when I finally find a solution to a problem. My main stack is <span class=\"underline\">React,</span> <span class=\"underline\">Next.js,</span> <span class=\"underline\">Node.js</span> and <span class=\"underline\">MongoDB</span>. I am also familiar with </span>на <span class=\"underline\">TypeScript,</span> <span class=\"underline\">Vue,</span> <span class=\"underline\">PHP</span> та <span class=\"underline\">Wordpress.</span>  I am always eager to learn new technologies. <br />I'm currently looking for a  <span class=\"font-bold\">fullstack</span> developer position full-time. I like to play video games and watch movies. I also like to learn new things. I am also learning to play the <span class=\"italic\">ukulele.</span>"
+			"description": "After graduating from university, I started working in brand design. <span class=\"font-bold\">For seven years </span>, designed <span class=\"italic\">logos</span> and <span class=\"italic\">corporate identity</span> for brands.<br />But I was always drawn to my high school passion for programming, so I decided to continue my studies in this area. I loaded up on books and video lectures and applied for this degree. My favorite part of programming is the problem-solving aspect. Solving problems in the code brings me happy. My main stack is <span class=\"underline\">React,</span> <span class=\"underline\">Next.js,</span> <span class=\"underline\">Node.js</span> and <span class=\"underline\">MongoDB</span>. I am also familiar with </span>на <span class=\"underline\">TypeScript,</span> <span class=\"underline\">Vue,</span> <span class=\"underline\">PHP</span> та <span class=\"underline\">Wordpress.</span><br />I'm currently looking for a  <span class=\"font-bold\">fullstack</span> developer position full-time. I also like to learn new things and new technologies. In my free time I play video games and watch movies. For the last year I have been learning to play the <span class=\"italic\">ukulele.</span>"
 		},
 		"projects": {
 			"title": "Projects",
