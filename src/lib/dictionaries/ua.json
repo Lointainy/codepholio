@@ -157,7 +157,11 @@
 	},
 	"footer": {
 		"copy": "Eug1.DEV. Всі права захищені.",
-		"build": "<span className=\"font-semibold\">Побудованно з:</span> Next.js, Tailwind"
+		"build": "<span className=\"font-semibold\">Побудованно з:</span> Next.js, Tailwind",
+		"code": {
+			"title": "Код проекту",
+			"url": "https://github.com/Lointainy/codepholio"
+		}
 	}
 }
 

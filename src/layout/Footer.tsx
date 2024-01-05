@@ -2,6 +2,7 @@ import React from 'react';
 
 import { getDictionary } from '@/lib/dictionary';
 import { Locale } from '@/i18n.config';
+import { Icon } from '@/components/standarts';
 
 type FooterProps = {
 	lang: Locale;
@@ -16,7 +17,15 @@ async function Footer({ lang }: FooterProps) {
 			<small className="mb-2 block text-xs">
 				&copy; {currentYear} {footer.copy}
 			</small>
-			<p className="text-xs mt-4" dangerouslySetInnerHTML={{ __html: footer.build }}></p>
+			<div className="flex flex-wrap gap-4 justify-center items-center mt-4">
+				<p className="text-xs" dangerouslySetInnerHTML={{ __html: footer.build }}></p>
+				<a href={footer.code.url} className="flex items-center gap-2 text-gray-950 dark:text-white">
+					<span>
+						<Icon name="github" category="social" />
+					</span>
+					{footer.code.title}
+				</a>
+			</div>
 		</footer>
 	);
 }

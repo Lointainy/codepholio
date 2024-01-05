@@ -157,7 +157,11 @@
 	},
 	"footer": {
 		"copy": "Eug1.DEV. All rights reserved.",
-		"build": "<span className=\"font-semibold\">Built with:</span> Next.js, Tailwind"
+		"build": "<span className=\"font-semibold\">Built with:</span> Next.js, Tailwind",
+		"code": {
+			"title": "Source code",
+			"url": "https://github.com/Lointainy/codepholio"
+		}
 	}
 }
 
