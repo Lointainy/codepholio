@@ -30,6 +30,8 @@ type ButtonProps = {
 	btnLink?: boolean;
 	btnIcon?: boolean;
 	children: React.ReactNode;
+	target?: string;
+	download?: boolean;
 } & (ButtonHTMLAttributes<HTMLButtonElement> | LinkProps);
 
 function SendButton({ btnText }: SendButtonProps) {
