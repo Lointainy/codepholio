@@ -1,12 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
 import { motion } from 'framer-motion';
 
-import { Icon } from '@/components/standarts';
+import { Icon, Button } from '@/components/standarts';
 import SectionContainer from './SectionContainer';
 
 import { PageSectionsType } from '@/types/data';
@@ -58,43 +57,24 @@ function Hero({ intl }: HeroProps) {
 					delay: 0.1
 				}}
 			>
-				<Link
-					href="#contact"
-					className="group flex items-center bg-gray-900 text-white px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
-				>
+				<Button btnClassName="primary" btnLink={true} href="#contact">
 					{intl.buttons.contact}
 					<Icon name="arrow-right-long" className="opacity-70 group-hover:translate-x-1 transition" />
-				</Link>
-				<a
-					href="/CV.pdf"
-					download
-					className="group flex items-center bg-white dark:bg-white/10 px-7 py-3 gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
-				>
+				</Button>
+				<Button btnClassName="secondary" btnLink={true} href="/CV.pdf" download>
 					{intl.buttons.download} CV
 					<Icon name="download" className="opacity-70 group-hover:translate-x-1 transition" />
-				</a>
+				</Button>
 				<div className="flex gap-4">
-					<a
-						href="https://www.linkedin.com/in/eugene-kozakov/"
-						className="group flex items-center bg-white dark:bg-white/10 p-4 gap-2 rounded-full outline-none text-xl focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
-						target="_blank"
-					>
+					<Button btnClassName="secondary" btnIcon={true} btnLink={true} href="https://www.linkedin.com/in/eugene-kozakov/" target="_blank">
 						<Icon name="linkedin" category="social" />
-					</a>
-					<a
-						href="https://github.com/Lointainy"
-						className="group flex items-center bg-white dark:bg-white/10 p-4 gap-2 rounded-full outline-none text-xl focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
-						target="_blank"
-					>
+					</Button>
+					<Button btnClassName="secondary" btnIcon={true} btnLink={true} href="https://github.com/Lointainy" target="_blank">
 						<Icon name="github" category="social" />
-					</a>
-					<a
-						href="https://t.me/eug1_kozakov"
-						className="group flex items-center bg-white dark:bg-white/10 p-4 gap-2 rounded-full outline-none text-xl focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
-						target="_blank"
-					>
+					</Button>
+					<Button btnClassName="secondary" btnIcon={true} btnLink={true} href="https://t.me/eug1_kozakov" target="_blank">
 						<Icon name="telegram" category="social" />
-					</a>
+					</Button>
 				</div>
 			</motion.div>
 		</SectionContainer>

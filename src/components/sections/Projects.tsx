@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 
 import ProjectItem from '@/components/ProjectItem';
-import { Icon } from '@/components/standarts';
+import { Icon, Button } from '@/components/standarts';
 import { PageSectionsType, ProjectItemType } from '@/types/data';
 import SectionContainer from './SectionContainer';
 import SectionHeading from './SectionHeading';
@@ -37,13 +37,10 @@ function Projects({ intl }: ProjectsProps) {
 				})}
 				<div className="flex justify-center items-center">
 					{projects && projects.length !== intl.list.length && (
-						<button
-							className="flex items-center justify-center bg-gray-900 dark:bg-white/20 text-white  gap-2 rounded-full outline-none transition cursor-pointer px-7 py-3 w-fit focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105 font-medium"
-							onClick={loadMore}
-						>
+						<Button onClick={loadMore} btnClassName="primary-alt">
 							{intl.buttons.loadMore}
 							<Icon name="plus" />
-						</button>
+						</Button>
 					)}
 				</div>
 			</div>
