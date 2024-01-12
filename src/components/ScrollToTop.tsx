@@ -32,7 +32,14 @@ function ScrollToTop() {
 	return (
 		<>
 			{isVisible && (
-				<Button btnClassName="primary-alt" btnIcon={true} type="button" name="scroll-to-top" onClick={handleScrollToTop}>
+				<Button
+					btnClassName="primary-alt"
+					btnIcon={true}
+					type="button"
+					name="scroll-to-top"
+					onClick={handleScrollToTop}
+					aria-label="Scroll to Top"
+				>
 					<Icon name="arrow-up" />
 				</Button>
 			)}

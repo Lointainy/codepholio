@@ -67,7 +67,10 @@ function ProjectItem({ title, description, tags, imageUrl, links }: ProjectItemT
 						width={300}
 						height={200}
 						quality={95}
-						priority
+						aspect-ratio="1 / 1"
+						sizes="(max-width: 768px) 30vw, (max-width: 1200px) 30vw, 20vw"
+						priority={false}
+						loading="lazy"
 						className="absolute bottom-0 right-0 shadow-2xl rounded-t-lg group-hover:scale-[1.1] group-hover:translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:rotate-2
 					"
 					/>

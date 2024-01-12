@@ -32,6 +32,7 @@ function LangSwitch({ lang }: LangSwitchProps) {
 							'font-bold': lang === locale
 						})}
 						href={redirectedPathName(locale)}
+						aria-label={`Switch language to ${locale}`}
 					>
 						{locale}
 					</Link>

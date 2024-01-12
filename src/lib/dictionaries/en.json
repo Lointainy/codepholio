@@ -27,7 +27,7 @@
 					"title": "Audio Ecommerce",
 					"description": "multi-page e-commerce website",
 					"tags": ["React", "Typescript", "Node.js", "MongoDB"],
-					"imageUrl": "/images/audio-ec.jpg",
+					"imageUrl": "/images/audio-ec.webp",
 					"links": [
 						{ "title": "website", "icon": "", "url": "https://audiophile-ecommerce-react-lointainy.netlify.app/" },
 						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/audiophile-ecommerce" }
@@ -37,7 +37,7 @@
 					"title": "Kanban App",
 					"description": "task management app, wit auth, server API CRUD",
 					"tags": ["React", "Typescript", "Node.js", "MongoDB", "authJWT", "Swagger"],
-					"imageUrl": "/images/kanban-app.jpg",
+					"imageUrl": "/images/kanban-app.webp",
 					"links": [
 						{ "title": "website", "icon": "", "url": "https://audiophile-ecommerce-react-lointainy.netlify.app" },
 						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/kanban-app" }
@@ -47,7 +47,7 @@
 					"title": "Countries App",
 					"description": "REST Countries API to pull country data",
 					"tags": ["React"],
-					"imageUrl": "/images/rest-countries.jpg",
+					"imageUrl": "/images/rest-countries.webp",
 					"links": [
 						{ "title": "website", "icon": "", "url": "https://rest-countries-api-react-lointainy.netlify.app" },
 						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/rest-countries-api-react" }

@@ -18,10 +18,56 @@ import { Footer } from '@/layout';
 import ScrollToTop from '@/components/ScrollToTop';
 
 const inter = Inter({ subsets: ['latin'] });
+const webPath = 'https://eug1.tech';
 
 export const metadata: Metadata = {
-	title: 'Eugi.dev | Codepholio',
-	description: 'Eugene is Fullstack dev, github:@lointainy'
+	title: 'Eugi.tech | Codepholio',
+	description: 'Eugene is Fullstack dev, github:@lointainy',
+	keywords: ['React', 'Next.js', 'developer', 'fullstack', 'portfolio', 'Javascipt', 'Typescript', 'Landing page', 'E-commerce'],
+	authors: [{ name: 'Eugene' }],
+	creator: 'Eugene Kozakov',
+	publisher: 'Eugene Kozakov',
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false
+	},
+	metadataBase: new URL(`${webPath}`),
+	alternates: {
+		canonical: '/',
+		languages: {
+			'en-US': '/en-US',
+			'uk-UA': '/uk-UA'
+		}
+	},
+	openGraph: {
+		title: 'Eugi.tech | Codepholio',
+		description: "I'm Fullstack developer. I enjoy building sites & apps. My focus is React (Next.js).",
+		url: `${webPath}`,
+		siteName: 'Eug1 tech',
+		images: '/favicon.png',
+		locale: 'uk_UA',
+		type: 'website'
+	},
+	robots: {
+		index: false,
+		follow: true,
+		nocache: true,
+		googleBot: {
+			index: true,
+			follow: false,
+			noimageindex: true
+		}
+	},
+	viewport: {
+		width: 'device-width',
+		initialScale: 1,
+		maximumScale: 5
+	},
+	verification: {
+		google: 'google',
+		yahoo: 'yahoo'
+	}
 };
 
 export async function generateStaticParams() {
