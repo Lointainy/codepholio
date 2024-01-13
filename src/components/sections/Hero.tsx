@@ -65,7 +65,7 @@ function Hero({ intl }: HeroProps) {
 				<Button
 					btnClassName="secondary"
 					btnLink={true}
-					href="https://drive.usercontent.google.com/u/0/uc?id=1FeeSgZLNMy2cg_d14iAyFLsyCPlq92xZ&export=download"
+					href="https://drive.google.com/file/d/1FeeSgZLNMy2cg_d14iAyFLsyCPlq92xZ/view?usp=sharing"
 					download
 				>
 					{intl.buttons.download} CV
