@@ -52,7 +52,7 @@ function Contact({ intl }: ContactProps) {
 	};
 
 	return (
-		<SectionContainer id="contact">
+		<SectionContainer id="contact" lastSection>
 			<SectionHeading>{intl.title}</SectionHeading>
 			<motion.div
 				variants={fadeInAnimationVar}

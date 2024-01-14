@@ -10,9 +10,10 @@ type SectionContainerProps = {
 	children: React.ReactNode;
 	id: (typeof links)[number]['name'];
 	fullSize?: boolean;
+	lastSection?: boolean;
 };
 
-function SectionContainer({ children, id, fullSize }: SectionContainerProps) {
+function SectionContainer({ children, id, fullSize, lastSection }: SectionContainerProps) {
 	const { ref, inView } = useInView({
 		threshold: 0.35
 	});
@@ -26,7 +27,11 @@ function SectionContainer({ children, id, fullSize }: SectionContainerProps) {
 	}, [inView, setActiveSection, timeOfLastClick, id]);
 
 	return (
-		<section ref={ref} id={id} className={`pt-28  text-center leading-8 ${fullSize ? 'w-full' : 'max-w-[45rem]'}`}>
+		<section
+			ref={ref}
+			id={id}
+			className={`${lastSection ? 'pb-0' : 'pb-28'} text-center leading-8 ${fullSize ? 'w-full' : 'max-w-[45rem]'}`}
+		>
 			{children}
 		</section>
 	);
