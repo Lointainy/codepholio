@@ -39,7 +39,7 @@
 					"tags": ["React", "Typescript", "Node.js", "MongoDB", "authJWT", "Swagger"],
 					"imageUrl": "/images/kanban-app.webp",
 					"links": [
-						{ "title": "website", "icon": "", "url": "https://audiophile-ecommerce-react-lointainy.netlify.app" },
+						{ "title": "website", "icon": "", "url": "https://kanban-app-react-lointainy.netlify.app/" },
 						{ "title": "github", "icon": "github", "url": "https://github.com/Lointainy/kanban-app" }
 					]
 				},
