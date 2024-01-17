@@ -19,8 +19,10 @@ type ActiveSectionContextType = {
 export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null);
 
 function ActiveSectionContextProvider({ children }: ActiveSectionContextProviderProps) {
-	const [activeSection, setActiveSection] = useState<SectionName>('home');
+	const [activeSection, setActiveSection] = useState<SectionName>('');
 	const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
+
+	console.log(activeSection)
 
 	return (
 		<ActiveSectionContext.Provider
