@@ -30,7 +30,7 @@ function SectionContainer({ children, id, fullSize, lastSection }: SectionContai
 		<section
 			ref={ref}
 			id={id}
-			className={`${lastSection ? 'pb-0' : 'pb-28'} text-center leading-8 ${fullSize ? 'w-full' : 'max-w-[45rem]'}`}
+			className={`${lastSection ? 'pb-0' : 'pt-28 pb-28'} text-center leading-8 ${fullSize ? 'w-full' : 'max-w-[45rem]'}`}
 		>
 			{children}
 		</section>

@@ -17,7 +17,7 @@ interface HeroProps {
 function Hero({ intl }: HeroProps) {
 	return (
 		<SectionContainer id="home">
-			<div className="flex items-center justify-center mt-28">
+			<div className="flex items-center justify-center">
 				<div className="relative z-0">
 					<motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'tween', duration: 0.2 }}>
 						<Image
