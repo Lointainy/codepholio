@@ -2,34 +2,48 @@ export const links = [
 	{
 		name: "home",
 		hash: "/",
+		isVisible: true
 	},
 	{
 		name: "about",
 		hash: "#about",
+		isVisible: true
 	},
 	{
 		name: "projects",
 		hash: "#projects",
+		isVisible: true
+	},
+	{
+		name: "portfolio",
+		hash: "portfolio",
+		isVisible: false
 	},
 	{
 		name: "skills",
 		hash: "#skills",
+		isVisible: true
 	},
 	{
 		name: "experience",
 		hash: "#experience",
+		isVisible: true
 	},
 	{
 		name: "services",
-		hash: "services"
+		hash: "services",
+		isVisible: true
 	},
 	{
 		name: "contact",
 		hash: "#contact",
+		isVisible: true
 	},
+
 	{
 		name: "blog",
 		hash: "posts",
+		isVisible: true
 	},
 ] as const;
 
