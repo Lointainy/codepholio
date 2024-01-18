@@ -20,12 +20,13 @@ interface NavbarProps {
 }
 
 function Navbar({ navigation }: NavbarProps) {
-	const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+	const { activeSection, setActiveSection, setTimeOfLastClick, isHomePage } = useActiveSectionContext();
 
 	const handleLinkClick = (linkName: SectionName) => {
 		setActiveSection(linkName);
 		setTimeOfLastClick(Date.now());
 	};
+
 	return (
 		<>
 			<motion.nav
@@ -51,7 +52,7 @@ function Navbar({ navigation }: NavbarProps) {
 										'hover:text-gray-950': activeSection !== link.name
 									}
 								)}
-								href={link.hash}
+								href={isHomePage ? link.hash : `/${link.hash}`}
 								onClick={() => handleLinkClick(link.name)}
 							>
 								{navigation[link.name]}
