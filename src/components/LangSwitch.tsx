@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import clsx from 'clsx';
 
@@ -15,17 +15,22 @@ type LangSwitchProps = {
 };
 
 function LangSwitch({ lang }: LangSwitchProps) {
-	const {activeSection} = useActiveSectionContext()
+	const { activeSection } = useActiveSectionContext();
 	const pathName = usePathname();
 
 	const redirectedPathName = (locale: string) => {
 		const segments = pathName.split('/');
-
-		if (!pathName) return '/';
+		const hash = `#${activeSection}`;
 
 		segments[1] = locale;
 
-		return segments.join('') + `#${activeSection}`;
+		if (!pathName) {
+			return '/';
+		} else if (activeSection != 'home' || !hash.length) {
+			return segments.join('') + hash;
+		} else {
+			return segments.join('');
+		}
 	};
 
 	return (
@@ -49,5 +54,4 @@ function LangSwitch({ lang }: LangSwitchProps) {
 }
 
 export default LangSwitch;
-
 
