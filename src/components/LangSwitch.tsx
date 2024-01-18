@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import clsx from 'clsx';
 
@@ -8,19 +8,24 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { Locale, i18n } from '@/i18n.config';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 type LangSwitchProps = {
 	lang: Locale;
 };
 
 function LangSwitch({ lang }: LangSwitchProps) {
+	const {activeSection} = useActiveSectionContext()
 	const pathName = usePathname();
 
 	const redirectedPathName = (locale: string) => {
-		if (!pathName) return '/';
 		const segments = pathName.split('/');
+
+		if (!pathName) return '/';
+
 		segments[1] = locale;
-		return segments.join('/');
+
+		return segments.join('') + `#${activeSection}`;
 	};
 
 	return (
@@ -44,4 +49,5 @@ function LangSwitch({ lang }: LangSwitchProps) {
 }
 
 export default LangSwitch;
+
 
