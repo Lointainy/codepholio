@@ -18,20 +18,28 @@ function LangSwitch({ lang }: LangSwitchProps) {
 	const { activeSection } = useActiveSectionContext();
 	const pathName = usePathname();
 
-	const redirectedPathName = (locale: string) => {
+	function redirectedPathName(locale: string) {
 		const segments = pathName.split('/');
 		const hash = `#${activeSection}`;
 
 		segments[1] = locale;
 
-		if (!pathName) {
-			return '/';
-		} else if (activeSection != 'home' || !hash.length) {
-			return segments.join('') + hash;
-		} else {
-			return segments.join('');
+		function hasMatch(str: string, arr: string[]) {
+			return arr.some((key: string) => str.includes(key));
 		}
-	};
+
+		if (!pathName) return '/';
+
+		if (hasMatch(activeSection, segments) && segments.length > 2) {
+			return segments.join('/');
+		}
+
+		if (activeSection != 'home' || !hash.length) {
+			return segments.join('') + hash;
+		}
+
+		return segments.join('/');
+	}
 
 	return (
 		<div className="flex items-center justify-center p-4 rounded-full bg-gray-950 dark:bg-white/20 text-white  backdrop-blur-[0.5rem] border border-white dark:border-gray-950 border-opacity-40 shadow-2xl hover:scale-105 active:scale-105 transition-all">
