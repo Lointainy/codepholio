@@ -17,11 +17,11 @@ function SectionContainer({ children, id, fullSize, lastSection }: SectionContai
 	const { ref, inView } = useInView({
 		threshold: 0.35
 	});
-	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+	const { setActiveSection, timeOfLastClick, isHomePage } = useActiveSectionContext();
 
 	useEffect(() => {
 		if (inView && Date.now() - timeOfLastClick > 1000) {
-			setActiveSection(id);
+			isHomePage && setActiveSection(id);
 			console.log(inView, id);
 		}
 	}, [inView, setActiveSection, timeOfLastClick, id]);
