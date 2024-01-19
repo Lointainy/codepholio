@@ -37,7 +37,7 @@ function Projects({ intl }: ProjectsProps) {
 				})}
 				<div className="flex justify-center items-center">
 					{projects && projects.length !== intl.list.length && (
-						<Button onClick={loadMore} btnClassName="primary-alt">
+						<Button onClick={loadMore} btnClassName="primaryAlt">
 							{intl.buttons.loadMore}
 							<Icon name="plus" />
 						</Button>

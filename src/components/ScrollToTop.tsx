@@ -33,7 +33,7 @@ function ScrollToTop() {
 		<>
 			{isVisible && (
 				<Button
-					btnClassName="primary-alt"
+					btnClassName="primaryAlt"
 					btnIcon={true}
 					type="button"
 					name="scroll-to-top"
